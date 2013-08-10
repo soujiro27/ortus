@@ -32,7 +32,7 @@ $_SESSION["id"];
 	<ul>
 		<li><a href="#" id="tooltip1" rel="tooltip" title="Inicio"><img src="img/menu/home.png" ></a></li>
 		<li><a href="#" id="tooltip1" rel="tooltip" title="Calificaciones" onclick="cali(<?php echo $_SESSION['id'];?> );"><img src="img/menu/calendar.png" alt=""></a></li>
-		<li><a href="#" id="tooltip1" rel="tooltip" title="Asistencias"><img src="img/menu/address-book.png" alt=""></a></li>
+		<li><a href="#" id="tooltip1" rel="tooltip" title="Asistencias" onclick="asis(<?php echo $_SESSION['id'];?> );"><img src="img/menu/address-book.png" alt=""></a></li>
 		<li><a href="#" id="tooltip1" rel="tooltip" title="Foros"><img src="img/menu/compose-4.png" alt=""></a></li>
 		<li><a href="#" id="tooltip1" rel="tooltip" title="Archivos"><img src="img/menu/folder-add.png" alt=""></a></li>
 		<li class="notificacion"><a href="#" id="tooltip1" rel="tooltip" title="Notificaciones"><img src="img/menu/bell.png" alt=""></a></li>
@@ -93,10 +93,10 @@ $_SESSION["id"];
 		 	
 </section>
 
+<section class="asistencias" id="seccion_asistencias">
+	
+</section>
 
-<div id="contenedor">
-  
-</div>
 
 
 </article>

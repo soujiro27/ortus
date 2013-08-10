@@ -10,7 +10,7 @@ function cali(id)
 {
 	var id_alumno=parseInt(id);
 	$("#bienvenida").hide();
-	$(".calificaciones").show('slow');
+	$("#seccion_asistencias").hide();
 
 
 
@@ -53,9 +53,25 @@ function cali(id)
 		
 	});
 
+$(".calificaciones").show('slow');
+delete html;
+delete id_alumno;
+}
 
-//delete html;
-//delete id_alumno;*/
+
+function asis(id)
+{
+	$("#bienvenida").hide();
+	$(".calificaciones").hide();
+	var id_alumno=parseInt(id);
+	$.post("php/asistencias.php",{id_alumno:id_alumno}, function(data){
+	var html=data;
+	$("#seccion_asistencias").html(html);
+
+
+
+	});
+	$("#seccion_asistencias").show('slow');
 }
 
 

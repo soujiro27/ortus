@@ -4,6 +4,7 @@ function esconde()
 {
 	$("aside.lateral").hide();
 	$(".calificaciones").hide();
+	$("#up_files").hide();
 }
 
 function cali(id)
@@ -11,6 +12,7 @@ function cali(id)
 	var id_alumno=parseInt(id);
 	$("#bienvenida").hide();
 	$("#seccion_asistencias").hide();
+
 
 
 
@@ -73,6 +75,50 @@ function asis(id)
 	});
 	$("#seccion_asistencias").show('slow');
 }
+
+
+function sube_files()
+{
+		$("aside.lateral").hide();
+		$("#bienvenida").hide();
+		$(".calificaciones").hide();
+		$("#seccion_asistencias").hide();
+
+		$("#up_files").show('slow');
+
+		$("section#up_files div.container").css({
+			
+			width: "70%",
+			margin: "0",
+			
+
+
+
+	});
+
+
+$(".fileupload-buttonbar").css({
+			border:"3px dashed black",
+			padding: "1%",
+			"border-radius": "8px",
+			
+
+
+
+	});
+
+
+$("section#up_files table.table").css({
+			margin: "1% 0 0 0",
+			
+
+
+
+	});
+}
+
+
+
 
 
 $(function () {

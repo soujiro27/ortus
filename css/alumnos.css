@@ -2,6 +2,7 @@ body
 {
 	font-size: 16px;
 	background: #E9ECEF;
+   padding-top: 0;
 	
 }
 
@@ -254,3 +255,10 @@ article.descripcion img:hover
 @-moz-keyframes animate-stripes {
    0% {background-position: 0 0;} 100% {background-position: 60px 0;}
 
+
+
+section.up_files  
+{
+   width: 50% !important;
+   border: 3px solid orange;
+}

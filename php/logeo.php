@@ -28,6 +28,26 @@ if ($row['tipo']==1)
 	}
 }
 
+if ($row['tipo']==2) {
+	
+	if ($row['clave']==$clave && $row['nombre']==$usuario)
+	{
+
+	$consulta2=$db->consulta("select * from profesor where id=3 limit 1;");
+	$row2=$db->fetch_array($consulta2);
+
+	$_SESSION["nombre"] = $row2['nombre']." ".$row2['apellido_p']." ".$row2['apellido_m']; 
+	
+
+	header("location: ../menu_maestro.php");
+	}
+}
+
+
+
+
+
+
 
 
 

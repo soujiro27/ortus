@@ -5,6 +5,7 @@ function esconde()
 	$("aside.lateral").hide();
 	$(".calificaciones").hide();
 	$("#up_files").hide();
+	$("#seccion_asistencias").hide();
 }
 
 function cali(id)
@@ -116,6 +117,71 @@ $("section#up_files table.table").css({
 
 	});
 }
+
+
+function cali_maestro()
+{
+	$("#bienvenida").hide();
+	$("#seccion_asistencias").hide('slow');
+	var id_maestro=3;
+	$.post("php/grupos_maestros.php",{id_maestro:id_maestro},function(data){
+		html=data;
+		$("#formulario_maestro").html(html);
+	})
+
+	
+
+
+	$("#secion_calificaciones_maestro").show('slow');
+}
+
+
+function carga_alumnos(cautri,carrera)
+{
+	var cuatri=cautri;
+	var carrera=carrera;
+
+	$.post("php/carga_tabla_alumnos.php",{cuatri:cuatri,carrera:carrera},function(data){
+		var html=data;
+		$("#tabla_alumnos").html(html);
+	});
+}
+
+
+function asist_maestro()
+{
+	$("#bienvenida").hide();
+	$("#secion_calificaciones_maestro").hide();
+	//$(".informacion").hide();
+
+	var id_maestro=3;
+	$.post("php/grupos_maestros_asis.php",{id_maestro:id_maestro},function(data){
+		html=data;
+		$("#formulario_maestro_asist").html(html);
+	});
+
+	$("#seccion_asistencias").show('slow');
+}
+
+
+function carga_alumnos_asis(cautri,carrera)
+{
+	var cuatri=cautri;
+	var carrera=carrera;
+
+	$.post("php/carga_tabla_alumnos_asis.php",{cuatri:cuatri,carrera:carrera},function(data){
+		var html=data;
+		$("#tabla_asistencias").html(html);
+	});
+
+
+}
+
+
+
+
+
+
 
 
 

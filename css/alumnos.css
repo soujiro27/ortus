@@ -1,3 +1,19 @@
+td
+{
+   text-transform: uppercase !important;
+}
+
+
+input[type="date"]
+{
+   width: 120px;
+}
+
+tr:nth-child(2n+1) {
+background-color: white;
+color:#7d879b;
+}
+
 body
 {
 	font-size: 16px;
@@ -262,3 +278,4 @@ section.up_files
    width: 50% !important;
    border: 3px solid orange;
 }
+

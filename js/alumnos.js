@@ -123,6 +123,7 @@ function cali_maestro()
 {
 	$("#bienvenida").hide();
 	$("#seccion_asistencias").hide('slow');
+	$("#up_files").hide();
 	var id_maestro=3;
 	$.post("php/grupos_maestros.php",{id_maestro:id_maestro},function(data){
 		html=data;
@@ -152,6 +153,7 @@ function asist_maestro()
 {
 	$("#bienvenida").hide();
 	$("#secion_calificaciones_maestro").hide();
+	$("#up_files").hide();
 	//$(".informacion").hide();
 
 	var id_maestro=3;
@@ -180,7 +182,45 @@ function carga_alumnos_asis(cautri,carrera)
 
 
 
+function sube_files_maestro()
+{
+		$("aside.lateral").hide();
+		$("#bienvenida").hide();
+		$(".calificaciones").hide();
+		$("#seccion_asistencias").hide();
 
+		$("#up_files").show('slow');
+
+		$("section#up_files div.container").css({
+			
+			width: "70%",
+			margin: "0",
+			
+
+
+
+	});
+
+
+$(".fileupload-buttonbar").css({
+			border:"3px dashed black",
+			padding: "1%",
+			"border-radius": "8px",
+			
+
+
+
+	});
+
+
+$("section#up_files table.table").css({
+			margin: "1% 0 0 0",
+			
+
+
+
+	});
+}
 
 
 

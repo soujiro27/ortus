@@ -39,7 +39,7 @@ $_SESSION["id"];
 		<li><a href="#" id="tooltip1" rel="tooltip" title="Calificaciones" onclick="cali_maestro();"><img src="img/menu/calendar.png" alt=""></a></li>
 		<li><a href="#" id="tooltip1" rel="tooltip" title="Asistencias" onclick="asist_maestro();"><img src="img/menu/address-book.png" alt=""></a></li>
 		<li><a href="/wordpress/" id="tooltip1" rel="tooltip" title="Foros"><img src="img/menu/compose-4.png" alt=""></a></li>
-		<li><a href="#" id="tooltip1" rel="tooltip" title="Archivos" onclick="sube_files();"><img src="img/menu/folder-add.png" alt=""></a></li>
+		<li><a href="#" id="tooltip1" rel="tooltip" title="Archivos" onclick="sube_files_maestro();"><img src="img/menu/folder-add.png" alt=""></a></li>
 		<li class="notificacion"><a href="#" id="tooltip1" rel="tooltip" title="Notificaciones"><img src="img/menu/bell.png" alt=""></a></li>
 		<li class="salir"><a href="#" id="tooltip1" rel="tooltip" title="Salir"><img src="img/menu/locked.png" alt=""></a></li>
 	</ul>
